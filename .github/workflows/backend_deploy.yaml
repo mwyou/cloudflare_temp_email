@@ -76,7 +76,6 @@ jobs:
           fi
           echo "Deployed for tag ${{ github.ref_name }}"
         env:
-          debug_mode: true
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           # ✅ 将 secret 映射到环境变量中
